@@ -6,7 +6,6 @@ def get_num_words(text):
 
 def count_chars(text):
     char_dict = {}
-    char_count = 0
     text = text.lower()
     for char in text:
         if char not in char_dict:
