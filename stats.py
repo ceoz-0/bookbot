@@ -12,3 +12,10 @@ def count_chars(text):
             char_dict[char] = 0
         char_dict[char] +=1
     return char_dict
+
+def dict_sorter(char_dict):
+    sorted_dict = sorted(char_dict.items(),key=lambda x:x[1], reverse=True)
+    for char in sorted_dict:
+        if char[0].isalpha():       
+            print(f"{char[0]}: {char[1]}")
+    print("============= END ===============")
